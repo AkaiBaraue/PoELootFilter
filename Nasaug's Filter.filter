@@ -53,6 +53,11 @@ Show # Valuables - Uniques
     SetBackgroundColor 128 0 0 # Important background
     SetFontSize 42
 
+Show
+    BaseType "Treasure Key" "Gold Key" "Silver Key"
+    SetBackgroundColor 128 0 0 # Important background
+    SetFontSize 42
+
 # Section: Flasks
 
 # Add a border to flasks that are near the current level or have 15%+ quality
