@@ -54,9 +54,13 @@ Show # Valuables - Uniques
     SetFontSize 42
 
 Show
-    BaseType "Treasure Key" "Gold Key" "Silver Key"
+    BaseType "Treasure Key" "Silver Key" "Golden Key"
     SetBackgroundColor 128 0 0 # Important background
     SetFontSize 42
+
+Show
+    BaseType "Sand of Eternity"
+    SetBackgroundColor 128 0 0 # Important background
 
 # Section: Flasks
 
@@ -162,10 +166,10 @@ Show # Flasks - Life - Divine+ - (over 70)
 
 # Add a red border and sound to special items: fishing rods, jewels (AlertSound7)
 Show # Valuables - Fishing Rods, Jewels, Div Cards
-    Class "Fishing Rod" "Jewel" "Divination Card"
+    Class "Fishing Rod" "Divination Card"
     SetBackgroundColor 128 0 0 # Important background
     SetBorderColor 150 0 0 # Special drops
-    SetFontSize 42
+    SetFontSize 35
     PlayAlertSound 7 100
 
 # Section: Links and Sockets
@@ -176,13 +180,13 @@ Show # Valuables - 5/6L
     SetBackgroundColor 128 0 0 # Important background
     SetBorderColor 127 127 127 # 6S/5L/6L border
     SetFontSize 42
-    PlayAlertSound 2 100
+    PlayAlertSound 1 100
 
 Show # Valuables - 6S
     Sockets = 6
     SetBackgroundColor 128 0 0 # Important background
     SetBorderColor 127 127 127 # 6S/5L/6L border
-    SetFontSize 42
+    SetFontSize 38
     PlayAlertSound 2 100
 
 # Slightly lighten white/magic RGB items a la Antnee
@@ -274,7 +278,7 @@ Show # Gems - Vaal
     SetFontSize 38
 
 Show # Gems - Support
-    Class "Support"
+    Class "Support" "Jewel"
     SetFontSize 35
 
 Show # Gems - Active
@@ -282,12 +286,6 @@ Show # Gems - Active
     SetFontSize 25
 
 # Section: Base Items
-
-# Add a dark green border to normal items of desired chance bases
-Hide # Bases - Chance
-    Rarity = Normal
-    BaseType "Occultist's" "Imperial Bow" "Gavel" "Prophecy Wand" "Imperial Bow" "Spine Bow" "Judgement Staff" "Penetrating Arrow Quiver" "Glorious Plate" "Siege Axe"
-    SetBorderColor 0 73 0 # Chance bases
 
 # Add a teal border to ilvl 77+ items of desired bases
 Show # Bases - 77+ crafting
