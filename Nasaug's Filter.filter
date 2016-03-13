@@ -264,14 +264,38 @@ Show # Flasks - Quality
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
     SetFontSize 32
 
-Show # Flasks - Hybrid - Hallowed
-    ItemLevel < 68
-    BaseType "Hallowed Hybrid Flask"
+Show # Flasks - Hybrid - ilvl < 26
+    ItemLevel < 26
+    Class "Hybrid Flask"
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
     SetFontSize 32
 
-Show # Flasks - Hybrid - Other
+Show # Flasks - Hybrid - ilvl < 35
+    ItemLevel < 35
+    DropLevel >= 20
     Class "Hybrid Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
+    SetFontSize 32
+
+Show # Flasks - Hybrid - ilvl < 45
+    ItemLevel < 45
+    DropLevel >= 30
+    Class "Hybrid Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
+    SetFontSize 32
+
+Show # Flasks - Hybrid - ilvl < 65
+    ItemLevel < 65
+    DropLevel >= 40
+    Class "Hybrid Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
+    SetFontSize 32
+
+Show # Flasks - Hybrid - Divine+ - (under 70)
+    ItemLevel < 75
+    DropLevel >= 60
+    Class "Hybrid Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
     SetFontSize 32
 
 Show # Flasks - Mana - ilvl < 15
