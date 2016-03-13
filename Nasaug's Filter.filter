@@ -137,7 +137,7 @@ Show # Valuables - Fishing Rods, Jewels, Div Cards
 Show
     LinkedSockets = 6
     SetBackgroundColor 1 59 1 # Special background
-    SetBorderColor 127 127 127 # 6S/5L/6L border
+    SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
     PlayAlertSound 2 300
 
@@ -145,14 +145,14 @@ Show
 Show # Valuables - 5/6L
     LinkedSockets = 5
     SetBackgroundColor 1 59 1 # Special background
-    SetBorderColor 127 127 127 # 6S/5L/6L border
+    SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
     PlayAlertSound 2 200
 
 Show # Valuables - 6S
     Sockets = 6
     SetBackgroundColor 1 59 1 # Special background
-    SetBorderColor 127 127 127 # 6S/5L/6L border
+    SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 38
     PlayAlertSound 2 100
 
@@ -163,7 +163,7 @@ Show # Valuables - RGB Items
     SocketGroup "RGB"
     SetBackgroundColor 0 0 0 # Contrast background
     SetBorderColor 255 192 203
-    SetFontSize 36
+    SetFontSize 34
 
 # Section: Regal Recipe
 
