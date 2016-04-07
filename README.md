@@ -1,5 +1,9 @@
 # Nasaug's Loot Filter
 
+This filter is based on a [Sayya's loot filter](https://github.com/SayyadinaAtreides/sayya-poe-filter) from back when loot filters were introduced. I have, since then, made a lot of changes to make it fit my needs better.
+
+The filter uses a combination of background color, border color and font size to denote what an item is and how valuable it is.
+
 ## 2016-03-12 changes:
 
  - Changed background colors of some things. Currency is now slightly lighter (to make it easier to read), maps are blue, div cards are purple and 6S, 5L and 6L are green. Uniques have a completely black background.
