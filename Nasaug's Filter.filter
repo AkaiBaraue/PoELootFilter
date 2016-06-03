@@ -1,4 +1,5 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# Patch version: 2.3
 
 # Section: Currency
 
@@ -11,7 +12,7 @@ Show # Currency - Extremely valuable
     PlayAlertSound 5 300
 
 Show # Currency - Valuable
-    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin"
+    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin" "Silver Coin" "Prophecy"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
@@ -32,7 +33,29 @@ Show # Currency - Low
 
 # Section: Maps
 
-Show # Maps/Fragments
+Show # Maps - Fragments - Mortal Fragments
+    Class "Map Fragments"
+    BaseType "Mortal Hope" "Mortal Grief" "Mortal Rage" "Mortal Ignorance"
+    SetBackgroundColor 2 118 158 # Fragment background
+    SetBorderColor 204 35 0 # Tier - High
+    SetFontSize 44
+    PlayAlertSound 6 200
+
+Show # Maps - Fragments - Sacrifice
+    Class "Map Fragments"
+    BaseType "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Dawn" "Sacrifice at Noon"
+    SetBackgroundColor 2 118 158 # Fragment background
+    SetBorderColor 196 125 0 # Tier - Mid
+    SetFontSize 40
+
+Show # Map - Fragments - Prophecy Keys
+    Class "Map Fragments"
+    BaseType "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
+    SetBackgroundColor 2 118 158 # Fragment background
+    SetBorderColor 162 0 255 # Prophecy
+    SetFontSize 40
+
+Show # Maps
     DropLevel >= 79
     Class "Map"
     SetBackgroundColor 2 2 158 # Map background
@@ -40,14 +63,14 @@ Show # Maps/Fragments
     SetFontSize 44
     PlayAlertSound 6 200
 
-Show # Maps/Fragments
+Show # Maps
     DropLevel >= 74
     Class "Map"
     SetBackgroundColor 2 2 158 # Map background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
 
-Show # Maps/Fragments
+Show # Maps
     Class "Map"
     SetBackgroundColor 2 2 158 # Map background
     SetBorderColor 191 191 191 # Tier - Low
@@ -101,7 +124,7 @@ Show
 # Divination Cards - Very Valuable
 Show
     Class "Divination Card"
-    BaseType "The Brittle Emperor" "The Doctor" "The Hunger" "The Wind" "The Avenger" "The Celestial Justicar" "The Fiend" "The King's Heart" "The Pact" "The Watcher" "The Queen" "The Last One Standing" "The Artist" "Wealth and Power" "House of Mirrors" "The Dragon's Heart" "Pride Before the Fall" "The Vast" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "Lost Worlds" "The Ethereal"
+    BaseType "The Brittle Emperor" "The Doctor" "The Hunger" "The Wind" "The Avenger" "The Celestial Justicar" "The Fiend" "The King's Heart" "The Pact" "The Watcher" "The Queen" "The Last One Standing" "The Artist" "Wealth and Power" "House of Mirrors" "The Dragon's Heart" "Pride Before the Fall" "The Vast" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "Lost Worlds" "The Ethereal" "The Cursed King" "Lysah's Respite" "Emperor of Purity"
     SetBackgroundColor 115 0 90 # Divination Card background
     SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
@@ -110,7 +133,7 @@ Show
 # Divination Cards - Valuable
 Show
     Class "Divination Card"
-    BaseType "The Hoarder" "The Drunken Aristocrat" "The Pack Leader" "The Sun" "The Gladiator" "Abandoned Wealth" "The Incantation" "Time-Lost Relic" "The Dark Mage" "The Road to Power" "The Chains that Bind" "The Betrayal" "The Trial" "Last Hope" "The Enlightened" "The Fletcher" "The Surveyor" "The Dapper Prodigy" "Tranquillity" "Earth Drinker"
+    BaseType "The Hoarder" "The Drunken Aristocrat" "The Pack Leader" "The Sun" "The Gladiator" "Abandoned Wealth" "The Incantation" "Time-Lost Relic" "The Dark Mage" "The Road to Power" "The Chains that Bind" "The Betrayal" "The Trial" "Last Hope" "The Enlightened" "The Fletcher" "The Surveyor" "The Dapper Prodigy" "Tranquillity" "Earth Drinker" "The Harvester" "The Stormcaller" "The Jester" "The Web"
     SetBackgroundColor 115 0 90 # Divination Card background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
@@ -410,7 +433,7 @@ Show # Jewelry
     SetFontSize 25
 
 Show # Chisel Hammers
-    Quality >= 10
+    Quality >= 5
     Rarity = Normal
     BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 
@@ -460,6 +483,12 @@ Show
 #    Class "Claws" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres" "Bows" "Staves" "Daggers" "Helmets" "Body Armours" "Gloves" "Boots" "Shields"
 #    SetBorderColor 127 255 212 # Quality equipment
 #Disabled Block End
+
+Show
+    LinkedSockets = 4
+    Class "Gloves" "Boots" "Helmets"
+    SetBackgroundColor 0 0 0 127 # Dim background
+    SetFontSize 25
 
 # Section: Cleanup (hiding)
 
