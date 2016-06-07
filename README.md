@@ -16,6 +16,6 @@ Border colors and font size:
  - Red, size 44 = Extremely valuable
  - Orange, size 40 = Valuable
  - White, size 36 = Uncommon items
- - Black, size 32 = Common items (currency only)
+ - Black, size 32 = Common items (currency only) 
 
  Other than the above-mentioned, there are multiple smaller things that are fairly easy to figure out during play.
