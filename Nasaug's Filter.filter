@@ -18,6 +18,7 @@ Show # Currency - Valuable
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
+    PlayAlertSound 5 50
 
 # Add a currency-colored border to midtier currency
 Show # Currency - Uncommon
