@@ -18,4 +18,4 @@ Border colors and font size:
  - White, size 36 = Uncommon items
  - Black, size 32 = Common items (currency only) 
 
- Other than the above-mentioned, there are multiple smaller things that are fairly easy to figure out during play.
+Other than the above-mentioned, there are multiple smaller things that are fairly easy to figure out during play.
