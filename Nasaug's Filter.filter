@@ -5,25 +5,25 @@
 
 # Add a unique border and sound to high-end currency (AlertSound5)
 Show # Currency - Extremely valuable
-    BaseType "Exalted" "Divine Orb" "Eternal Orb" "Mirror of" "Feather"
     Class "Currency"
+    BaseType "Exalted" "Divine Orb" "Eternal Orb" "Mirror of" "Feather"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
     PlayAlertSound 5 300
 
 Show # Currency - Valuable
-    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin" "Silver Coin" "Prophecy"
     Class "Currency"
+    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin" "Silver Coin" "Prophecy"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
-    PlayAlertSound 5 50
+    PlayAlertSound 5 25
 
 # Add a currency-colored border to midtier currency
 Show # Currency - Uncommon
-    BaseType "Regret" "Orb of Alchemy" "Chromatic Orb" "Orb of Chance" "Orb of Scouring"
     Class "Currency"
+    BaseType "Regret" "Orb of Alchemy" "Chromatic Orb" "Orb of Chance" "Orb of Scouring"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 36
@@ -154,7 +154,7 @@ Show
 # Add a red border and sound to special items: fishing rods, jewels (AlertSound7)
 Show # Valuables - Fishing Rods, Jewels, Div Cards
     Class "Fishing Rod"
-    SetBackgroundColor 150 0 2
+    SetBackgroundColor 150 0 2 # Super Rare background
     SetBorderColor 0 0 0
     SetFontSize 44
     PlayAlertSound 7 300
@@ -163,7 +163,7 @@ Show # Valuables - Fishing Rods, Jewels, Div Cards
 
 Show
     LinkedSockets = 6
-    SetBackgroundColor 1 59 1 # Special background
+    SetBackgroundColor 1 59 1 # 6S/5L/6L background
     SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
     PlayAlertSound 2 300
@@ -171,14 +171,14 @@ Show
 # Add a grey border and sound to 6s/5l/6l items (AlertSound2)
 Show # Valuables - 5/6L
     LinkedSockets = 5
-    SetBackgroundColor 1 59 1 # Special background
+    SetBackgroundColor 1 59 1 # 6S/5L/6L background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
     PlayAlertSound 2 200
 
 Show # Valuables - 6S
     Sockets = 6
-    SetBackgroundColor 1 59 1 # Special background
+    SetBackgroundColor 1 59 1 # 6S/5L/6L background
     SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 38
     PlayAlertSound 2 100
@@ -191,6 +191,23 @@ Show # Valuables - RGB Items
     SetBackgroundColor 0 0 0 # Contrast background
     SetBorderColor 255 192 203
     SetFontSize 34
+
+# Section: Jewels
+
+# Show all rares not covered above (safeguard)
+Show # Rares - Other
+    Rarity = Rare
+    BaseType "Jewel"
+    SetBackgroundColor 82 38 148 # Jewel background
+    SetBorderColor 196 125 0 # Tier - Mid
+    SetFontSize 40
+
+# Show all rares not covered above (safeguard)
+Show # Rares - Other
+    BaseType "Jewel"
+    SetBackgroundColor 82 38 148 # Jewel background
+    SetBorderColor 191 191 191 # Tier - Low
+    SetFontSize 36
 
 # Section: Regal Recipe
 
@@ -238,12 +255,6 @@ Show # Rares - 60+ - Chaos recipe
 
 # Section: Rares
 
-# Show all rares not covered above (safeguard)
-Show # Rares - Other
-    Rarity = Rare
-    BaseType "Jewel"
-    SetFontSize 36
-
 Show # Rares - Other
     Rarity = Rare
     SetFontSize 32
@@ -255,23 +266,23 @@ Show # Gems - Quality
     Quality > 0
     Class "Gem"
     SetBorderColor 54 100 146 # Valuable/quality gems
-    SetFontSize 38
+    SetFontSize 40
 
 Show # Gems - Valuable
     Class "Gem"
     BaseType "Portal" "Detonate Mines" "Empower" "Enhance" "Enlighten" "Added Chaos Damage"
     SetBorderColor 54 100 146 # Valuable/quality gems
-    SetFontSize 38
+    SetFontSize 40
 
 Show # Gems - Vaal
     Class "Gem"
     BaseType "Vaal"
     SetBorderColor 150 0 0 # Vaal gems
-    SetFontSize 38
+    SetFontSize 40
 
 Show # Gems - Support
-    Class "Support" "Jewel"
-    SetFontSize 35
+    Class "Support"
+    SetFontSize 32
 
 Show # Gems - Active
     Class "Active"
@@ -279,15 +290,27 @@ Show # Gems - Active
 
 # Section: Flasks
 
-# Add a border to flasks that are near the current level or have 15%+ quality
-Show # Flasks - Utility
-    Class "Utility Flask"
+Show # Flasks - Quality
+    Quality >= 15
+    Class "Flask"
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
-    SetFontSize 32
+    SetFontSize 40
+
+Show # Flasks - Quality
+    Quality >= 10
+    Class "Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
+    SetFontSize 36
 
 Show # Flasks - Quality
     Quality >= 5
     Class "Flask"
+    SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
+    SetFontSize 32
+
+# Add a border to flasks that are near the current level or have 15%+ quality
+Show # Flasks - Utility
+    Class "Utility Flask"
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
     SetFontSize 32
 
@@ -319,7 +342,7 @@ Show # Flasks - Hybrid - ilvl < 65
     SetFontSize 32
 
 Show # Flasks - Hybrid - Divine+ - (under 70)
-    ItemLevel < 75
+    ItemLevel < 70
     DropLevel >= 60
     Class "Hybrid Flask"
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
