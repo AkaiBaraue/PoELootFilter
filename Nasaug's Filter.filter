@@ -194,16 +194,14 @@ Show # Valuables - RGB Items
 
 # Section: Jewels
 
-# Show all rares not covered above (safeguard)
-Show # Rares - Other
+Show # Jewels - Rare
     Rarity = Rare
     BaseType "Jewel"
     SetBackgroundColor 82 38 148 # Jewel background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
 
-# Show all rares not covered above (safeguard)
-Show # Rares - Other
+Show # Jewels
     BaseType "Jewel"
     SetBackgroundColor 82 38 148 # Jewel background
     SetBorderColor 191 191 191 # Tier - Low
@@ -290,6 +288,7 @@ Show # Gems - Active
 
 # Section: Flasks
 
+# Add a border to flasks that are near the current level or have 15%+ quality
 Show # Flasks - Quality
     Quality >= 15
     Class "Flask"
@@ -308,7 +307,6 @@ Show # Flasks - Quality
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
     SetFontSize 32
 
-# Add a border to flasks that are near the current level or have 15%+ quality
 Show # Flasks - Utility
     Class "Utility Flask"
     SetBorderColor 88 0 179 # Utility/Hybrid/Quality flask
@@ -494,13 +492,13 @@ Show # Maraketh Weapons - Merciless
 # Section: Quality Weapon/Armor
 
 # Weapons and armor with >=20 quality
-Show
-    Quality >= 20
-    Rarity = Normal
-    Height <= 3
-    Class "Claws" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres" "Bows" "Staves" "Daggers" "Helmets" "Body Armours" "Gloves" "Boots" "Shields"
-    SetBorderColor 127 255 212 # Quality equipment
-    SetFontSize 38
+#Show
+#    Quality >= 20
+#    Rarity = Normal
+#    Height <= 3
+#    Class "Claws" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres" "Bows" "Staves" "Daggers" "Helmets" "Body Armours" "Gloves" "Boots" "Shields"
+#    SetBorderColor 127 255 212 # Quality equipment
+#    SetFontSize 38
 
 #Disabled Block Start
 # Weapons and armor with >= 15 quality
