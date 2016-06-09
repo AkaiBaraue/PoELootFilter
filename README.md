@@ -5,9 +5,9 @@ This filter is based on a [Sayya's loot filter](https://github.com/SayyadinaAtre
 The filter uses a combination of background color (item groups) and border color/font size together (how valuable an item is within the group) to denote what an item is and how valuable it is.
 
 Background colors:
- - Red = PICK ME UP
+ - Orange = Jewels
+ - Red = Fishing Rod
  - Purple = Divination Cards
- - Blueviolet = Jewels
  - Blue = Maps
  - Teal = Sacrifice Fragments
  - Green = 6S, 5L and 6L Items
