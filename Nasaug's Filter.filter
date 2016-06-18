@@ -1,7 +1,7 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # Patch version: 2.3
 
-# Section: Currency
+# Section: Currency #######################################################
 
 # Add a unique border and sound to high-end currency (AlertSound5)
 Show # Currency - Extremely valuable
@@ -35,7 +35,7 @@ Show # Currency - Low
     SetBorderColor 0 0 0
     SetFontSize 32
 
-# Section: Maps
+# Section: Maps #######################################################
 
 Show # Maps - Fragments - Mortal Fragments
     Class "Map Fragments"
@@ -80,7 +80,7 @@ Show # Maps
     SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 36
 
-# Section: Uniques
+# Section: Uniques #######################################################
 
 # Uniques - Extremely Valuable Uniques
 Show
@@ -105,13 +105,13 @@ Show
     SetFontSize 36
     PlayAlertSound 1 100
 
-# Section: Quest Items
+# Section: Quest Items #######################################################
 
 Show # Quest Items
     Class "Quest"
     SetFontSize 36
 
-# Section: Labyrinth
+# Section: Labyrinth #######################################################
 
 Show
     BaseType "Treasure Key" "Silver Key" "Golden Key"
@@ -123,7 +123,7 @@ Show
     SetBorderColor 150 0 0 # Special drops
     SetFontSize 36
 
-# Section: Special Items
+# Section: Special Items #######################################################
 
 # Divination Cards - Very Valuable
 Show
@@ -152,14 +152,14 @@ Show
     PlayAlertSound 7 100
 
 # Add a red border and sound to special items: fishing rods, jewels (AlertSound7)
-Show # Valuables - Fishing Rods, Jewels, Div Cards
+Show # Valuables - Fishing Rods
     Class "Fishing Rod"
     SetBackgroundColor 150 0 2 # Super Rare background
     SetBorderColor 0 0 0
     SetFontSize 44
     PlayAlertSound 7 300
 
-# Section: Links and Sockets
+# Section: Links and Sockets #######################################################
 
 Show
     LinkedSockets = 6
@@ -192,22 +192,22 @@ Show # Valuables - RGB Items
     SetBorderColor 255 192 203
     SetFontSize 34
 
-# Section: Jewels
+# Section: Jewels #######################################################
 
 Show # Jewels - Rare
     Rarity = Rare
     Class "Jewel"
-    SetBackgroundColor 128 64 0 # Jewel background
+    SetBackgroundColor 89 0 0 # Jewel background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
 
 Show # Jewels
     Class "Jewel"
-    SetBackgroundColor 128 64 0 # Jewel background
+    SetBackgroundColor 89 0 0 # Jewel background
     SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 36
 
-# Section: Regal Recipe
+# Section: Regal Recipe #######################################################
 
 Show # Rares - 75+ - Regal recipe - Jewelry
     ItemLevel >= 75
@@ -216,10 +216,35 @@ Show # Rares - 75+ - Regal recipe - Jewelry
     SetBorderColor 136 136 255 # Regal recipe bright
     SetFontSize 36
 
-Show # Rares - 75+ - Regal recipe - Interesting Bases
+#Show # Rares - 75+ - Regal recipe - Interesting Bases
+#    ItemLevel >= 75
+#    DropLevel >= 60
+#    Rarity = Rare
+#    SetBorderColor 136 136 255 200 # Regal recipe faint
+#    SetFontSize 36
+
+Show # Rares - 75+ - Regal recipe - Interesting Armour Bases
     ItemLevel >= 75
-    DropLevel >= 60
     Rarity = Rare
+    Class "Body Armour" "Boots" "Gloves" "Helmets" "Shields"
+    BaseType "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
+    SetBorderColor 136 136 255 200 # Regal recipe faint
+    SetFontSize 36
+
+Show # Rares - 75+ - Regal recipe - Interesting Weapon Bases
+    ItemLevel >= 75
+    DropLevel >= 66
+    Rarity = Rare
+    Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+    SetBorderColor 136 136 255 200 # Regal recipe faint
+    SetFontSize 36
+
+# Necessary because some interesting weapon bases are below drop level 66
+Show # Rares - 75+ - Regal recipe - Interesting Weapon Bases
+    ItemLevel >= 75
+    Rarity = Rare
+    Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+    BaseType "Solar Maul" "Opal Sceptre" "Gavel" "Imbued Wand" "Opal Wand" "Vaal Axe"
     SetBorderColor 136 136 255 200 # Regal recipe faint
     SetFontSize 36
 
@@ -229,7 +254,7 @@ Show # Rares - 75+ - Regal recipe
     SetBorderColor 136 136 255 200 # Regal recipe faint
     SetFontSize 32
 
-# Section: Chaos Recipe
+# Section: Chaos Recipe #######################################################
 
 Show # Rares - 60+ - Chaos recipe - Jewelry
     ItemLevel >= 60
@@ -238,10 +263,35 @@ Show # Rares - 60+ - Chaos recipe - Jewelry
     SetBorderColor 254 170 0 # Chaos recipe bright
     SetFontSize 36
 
-Show # Rares - 60+ - Chaos recipe - Interesting Bases
+#Show # Rares - 60+ - Chaos recipe - Interesting Bases
+#    ItemLevel >= 60
+#    DropLevel >= 60
+#    Rarity = Rare
+#    SetBorderColor 254 170 0 127 # Chaos recipe faint
+#    SetFontSize 36
+
+Show # Rares - 60+ - Chaos recipe - Interesting Armour Bases
     ItemLevel >= 60
-    DropLevel >= 60
     Rarity = Rare
+    Class "Body Armour" "Boots" "Gloves" "Helmets" "Shields"
+    BaseType "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
+    SetBorderColor 254 170 0 127 # Chaos recipe faint
+    SetFontSize 36
+
+Show # Rares - 60+ - Chaos recipe - Interesting Weapon Bases
+    ItemLevel >= 60
+    DropLevel >= 66
+    Rarity = Rare
+    Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+    SetBorderColor 254 170 0 127 # Chaos recipe faint
+    SetFontSize 36
+
+# Necessary because some interesting weapon bases are below drop level 66
+Show # Rares - 60+ - Chaos recipe - Interesting Weapon Bases
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+    BaseType "Solar Maul" "Opal Sceptre" "Gavel" "Imbued Wand" "Opal Wand" "Vaal Axe"
     SetBorderColor 254 170 0 127 # Chaos recipe faint
     SetFontSize 36
 
@@ -251,13 +301,13 @@ Show # Rares - 60+ - Chaos recipe
     SetBorderColor 254 170 0 127 # Chaos recipe faint
     SetFontSize 32
 
-# Section: Rares
+# Section: Rares #######################################################
 
 Show # Rares - Other
     Rarity = Rare
     SetFontSize 32
 
-# Section: Gems
+# Section: Gems #######################################################
 
 # Slightly enlarge and add a teal border to quality gems as well as Empower etc.; shrink all other gems slightly; slightly dim active gems.
 Show # Gems - Quality
@@ -286,7 +336,7 @@ Show # Gems - Active
     Class "Active"
     SetFontSize 25
 
-# Section: Flasks
+# Section: Flasks #######################################################
 
 # Add a border to flasks that are near the current level or have 15%+ quality
 Show # Flasks - Quality
@@ -438,7 +488,7 @@ Show # Flasks - Life - Divine+ - (over 70)
     Class "Life Flask"
     SetFontSize 25
 
-# Section: Base Items
+# Section: Base Items #######################################################
 
 # Add a teal border to ilvl 77+ items of desired bases
 Show # Bases - 77+ crafting
@@ -515,7 +565,7 @@ Show
     SetBackgroundColor 0 0 0 127 # Dim background
     SetFontSize 25
 
-# Section: Cleanup (hiding)
+# Section: Cleanup (hiding) #######################################################
 
 # Hide white and magic items with a substantial gap between drop and item level (REMOVE FROM HERE UNTIL NEXT COMMENT if you want nothing hidden)
 Hide # Trash - Low Base
