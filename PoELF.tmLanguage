@@ -46,7 +46,7 @@
 			<key>comment</key>
 			<string>Anything inside quotation marks</string>
 			<key>match</key>
-			<string>("(([a-zA-Z]+[']?)\s?)+")</string>
+			<string>("(([a-zA-Z-]+[']?)\s?)+")</string>
 			<key>name</key>
 			<string>string.quoted.single.poelf</string>
 		</dict>
