@@ -24,7 +24,7 @@ patterns:
 
 - comment: Anything inside quotation marks
   name: string.quoted.single.poelf
-  match: ("(([a-zA-Z]+[']?)\s?)+")
+  match: ("(([a-zA-Z-]+[']?)\s?)+")
 
 - comment: Numerics
   name: constant.numeric.source

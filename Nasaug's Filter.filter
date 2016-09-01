@@ -14,22 +14,28 @@ Show # Currency - Extremely valuable
 
 Show # Currency - Valuable
     Class "Currency"
-    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin" "Silver Coin" "Prophecy"
+    BaseType "Fusing" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Jeweller's Orb" "Glassblower's" "Perandus Coin" "Silver Coin" "Prophecy" "Unshaping Orb" "Master Cartographer's Sextant" "Master Cartographer's Seal"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 196 125 0 # Tier - Mid
     SetFontSize 40
     PlayAlertSound 5 25
 
-# Add a currency-colored border to midtier currency
-Show # Currency - Uncommon
+Show # Currency - Low-medium
     Class "Currency"
-    BaseType "Regret" "Orb of Alchemy" "Chromatic Orb" "Orb of Chance" "Orb of Scouring"
+    BaseType "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal" "Remnant of Corruption" "Essence"
+    SetBackgroundColor 100 78 53 # Currency background
+    SetBorderColor 191 191 191 # Tier - Low
+    SetFontSize 38
+
+Show # Currency - Low
+    Class "Currency"
+    BaseType "Regret" "Orb of Alchemy" "Chromatic Orb" "Orb of Chance" "Orb of Scouring" "Apprentice Cartographer's Sextant" "Apprentice Cartographer's Seal" "Essence"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 191 191 191 # Tier - Low
     SetFontSize 36
 
 # Default handling of other currency
-Show # Currency - Low
+Show # Currency - Other
     Class "Currency"
     SetBackgroundColor 100 78 53 # Currency background
     SetBorderColor 0 0 0
@@ -40,6 +46,14 @@ Show # Currency - Low
 Show # Maps - Fragments - Mortal Fragments
     Class "Map Fragments"
     BaseType "Mortal Hope" "Mortal Grief" "Mortal Rage" "Mortal Ignorance"
+    SetBackgroundColor 2 118 158 # Fragment background
+    SetBorderColor 204 35 0 # Tier - High
+    SetFontSize 44
+    PlayAlertSound 6 200
+
+Show # Map - Fragments - Shaper
+    Class "Map Fragments"
+    BaseType "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of the Chimera" "Fragment of the Hydra"
     SetBackgroundColor 2 118 158 # Fragment background
     SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
@@ -109,7 +123,8 @@ Show
 
 Show # Quest Items
     Class "Quest"
-    SetFontSize 36
+    SetBorderColor 204 35 0 # Tier - High
+    SetFontSize 40
 
 # Section: Labyrinth #######################################################
 
@@ -119,7 +134,7 @@ Show
     SetFontSize 36
 
 Show
-    BaseType "Bane of the Loyal" "Cogs of Disruption" "Cube Of Absorption" "Heart of the Gargoyle" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
+    BaseType "Sand of Eternity" "Orb of Elemental Dispersion" "Rod of Detonation" "Cube Of Absorption" "Bane of the Loyal" "Heart of the Gargoyle" "Cogs of Disruption" "Portal Shredder"
     SetBorderColor 150 0 0 # Special drops
     SetFontSize 36
 
@@ -128,7 +143,7 @@ Show
 # Divination Cards - Very Valuable
 Show
     Class "Divination Card"
-    BaseType "The Brittle Emperor" "The Doctor" "The Hunger" "The Wind" "The Avenger" "The Celestial Justicar" "The Fiend" "The King's Heart" "The Pact" "The Watcher" "The Queen" "The Last One Standing" "The Artist" "Wealth and Power" "House of Mirrors" "The Dragon's Heart" "Pride Before the Fall" "The Vast" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "Lost Worlds" "The Ethereal" "The Cursed King" "Lysah's Respite" "Emperor of Purity"
+    BaseType "The Brittle Emperor" "The Doctor" "The Hunger" "The Wind" "The Avenger" "The Celestial Justicar" "The Fiend" "The King's Heart" "The Pact" "The Watcher" "The Queen" "The Last One Standing" "The Artist" "Wealth and Power" "House of Mirrors" "The Dragon's Heart" "Pride Before the Fall" "The Vast" "Bowyer's Dream" "Hunter's Reward" "The Thaumaturgist" "The Warlord" "The Offering" "Lost Worlds" "The Ethereal" "The Cursed King" "Lysah's Respite" "Emperor of Purity" "The Oath" "The Scavenger" "The Void" "Mawr Blaidd"
     SetBackgroundColor 115 0 90 # Divination Card background
     SetBorderColor 204 35 0 # Tier - High
     SetFontSize 44
@@ -227,7 +242,7 @@ Show # Rares - 75+ - Regal recipe - Interesting Armour Bases
     ItemLevel >= 75
     Rarity = Rare
     Class "Body Armour" "Boots" "Gloves" "Helmets" "Shields"
-    BaseType "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
+    BaseType  "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
     SetBorderColor 136 136 255 200 # Regal recipe faint
     SetFontSize 36
 
@@ -274,7 +289,7 @@ Show # Rares - 60+ - Chaos recipe - Interesting Armour Bases
     ItemLevel >= 60
     Rarity = Rare
     Class "Body Armour" "Boots" "Gloves" "Helmets" "Shields"
-    BaseType "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
+    BaseType  "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Glorious Plate" "Gladiator Plate" "Astral Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Conquest Chainmail" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Varnished Coat" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Assassin's Boots" "Murder Boots" "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Ezomyte Burgonet" "Royal Burgonet" "Eternal Burgonet" "Silken Hood" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Vaal Buckler" "Crusader Buckler" "Imperial Buckler" "Fossilised Spirit Shield" "Vaal Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Cardinal Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield"
     SetBorderColor 254 170 0 127 # Chaos recipe faint
     SetFontSize 36
 
@@ -512,10 +527,10 @@ Show # Chisel Hammers
     Rarity = Normal
     BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 
-Show # Chisel Hammers
-    Quality >= 12
-    Rarity = Magic
-    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+#Show # Chisel Hammers
+#    Quality >= 12
+#    Rarity = Magic
+#    BaseType "Stone Hammer" "Rock Breaker" "Gavel"
 
 Show # Valuables - Sacrificial Garb
     BaseType "Sacrificial Garb"
