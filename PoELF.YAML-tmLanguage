@@ -8,7 +8,7 @@ uuid: a3da04f1-6885-40de-bd99-b03f5cf86c05
 patterns:
 - comment: Comments starting with #
   name: comment.line.double-dash.poelf
-  match: (#.+)
+  match: (#.*)
 
 - comment: Variables to match items to
   name: storage.type.poelf
