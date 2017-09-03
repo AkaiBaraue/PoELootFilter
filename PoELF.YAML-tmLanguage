@@ -16,7 +16,7 @@ patterns:
 
 - comment: Keywords used to change the look of loot
   name: keyword.other.poelf
-  match: (Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound)
+  match: (Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional)
 
 - comment: The different rarity types
   name: string.quoted.single.poelf

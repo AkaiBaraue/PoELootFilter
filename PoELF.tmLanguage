@@ -2,66 +2,66 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>fileTypes</key>
-	<array>
-		<string>filter</string>
-	</array>
-	<key>name</key>
-	<string>PoE Loot Filter</string>
-	<key>patterns</key>
-	<array>
-		<dict>
-			<key>comment</key>
-			<string>Comments starting with</string>
-			<key>match</key>
-			<string>(#.*)</string>
-			<key>name</key>
-			<string>comment.line.double-dash.poelf</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Variables to match items to</string>
-			<key>match</key>
-			<string>(Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height)</string>
-			<key>name</key>
-			<string>storage.type.poelf</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Keywords used to change the look of loot</string>
-			<key>match</key>
-			<string>(Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound)</string>
-			<key>name</key>
-			<string>keyword.other.poelf</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>The different rarity types</string>
-			<key>match</key>
-			<string>(Normal|Magic|Rare|Unique)</string>
-			<key>name</key>
-			<string>string.quoted.single.poelf</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Anything inside quotation marks</string>
-			<key>match</key>
-			<string>("(([a-zA-Z-]+[']?)\s?)+")</string>
-			<key>name</key>
-			<string>string.quoted.single.poelf</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Numerics</string>
-			<key>match</key>
-			<string>(\d+)</string>
-			<key>name</key>
-			<string>constant.numeric.source</string>
-		</dict>
-	</array>
-	<key>scopeName</key>
-	<string>source.poelf</string>
-	<key>uuid</key>
-	<string>a3da04f1-6885-40de-bd99-b03f5cf86c05</string>
+    <key>fileTypes</key>
+    <array>
+        <string>filter</string>
+    </array>
+    <key>name</key>
+    <string>PoE Loot Filter</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>comment</key>
+            <string>Comments starting with</string>
+            <key>match</key>
+            <string>(#.*)</string>
+            <key>name</key>
+            <string>comment.line.double-dash.poelf</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Variables to match items to</string>
+            <key>match</key>
+            <string>(Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height)</string>
+            <key>name</key>
+            <string>storage.type.poelf</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Keywords used to change the look of loot</string>
+            <key>match</key>
+            <string>(Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional)</string>
+            <key>name</key>
+            <string>keyword.other.poelf</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>The different rarity types</string>
+            <key>match</key>
+            <string>(Normal|Magic|Rare|Unique)</string>
+            <key>name</key>
+            <string>string.quoted.single.poelf</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Anything inside quotation marks</string>
+            <key>match</key>
+            <string>("(([a-zA-Z-]+[']?)\s?)+")</string>
+            <key>name</key>
+            <string>string.quoted.single.poelf</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Numerics</string>
+            <key>match</key>
+            <string>(\d+)</string>
+            <key>name</key>
+            <string>constant.numeric.source</string>
+        </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.poelf</string>
+    <key>uuid</key>
+    <string>a3da04f1-6885-40de-bd99-b03f5cf86c05</string>
 </dict>
 </plist>
