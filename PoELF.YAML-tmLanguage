@@ -12,15 +12,15 @@ patterns:
 
 - comment: Variables to match items to
   name: storage.type.poelf
-  match: (Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height)
+  match: (Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height|ElderItem|ShaperItem|Identified|HasExplicitMod|MapTier)
 
 - comment: Keywords used to change the look of loot
   name: keyword.other.poelf
-  match: (Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional)
+  match: (Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)
 
 - comment: The different rarity types
   name: string.quoted.single.poelf
-  match: (Normal|Magic|Rare|Unique)
+  match: (Normal|Magic|Rare|Unique|True|False)
 
 - comment: Anything inside quotation marks
   name: string.quoted.single.poelf
@@ -29,4 +29,8 @@ patterns:
 - comment: Numerics
   name: constant.numeric.source
   match: (\d+)
+
+- comment: Minimap and Effect modifiers
+  name: constant.numeric.source
+  match: (Red|Green|Blue|Brown|White|Yellow|Circle|Diamond|Hexagon|Square|Star|Triangle|Temp)
 ...
