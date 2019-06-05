@@ -22,7 +22,7 @@
             <key>comment</key>
             <string>Variables to match items to</string>
             <key>match</key>
-            <string>(Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height)</string>
+            <string>(Class|BaseType|Rarity|ItemLevel|Quality|LinkedSockets|Sockets|SocketGroup|DropLevel|Width|Height|ElderItem|ShaperItem|ShapedMap|ElderMap|Identified|HasExplicitMod|MapTier)</string>
             <key>name</key>
             <string>storage.type.poelf</string>
         </dict>
@@ -30,7 +30,7 @@
             <key>comment</key>
             <string>Keywords used to change the look of loot</string>
             <key>match</key>
-            <string>(Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional)</string>
+            <string>(Hide|Show|SetTextColor|SetBorderColor|SetBackgroundColor|SetFontSize|PlayAlertSound|PlayAlertSoundDirectional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)</string>
             <key>name</key>
             <string>keyword.other.poelf</string>
         </dict>
@@ -38,7 +38,7 @@
             <key>comment</key>
             <string>The different rarity types</string>
             <key>match</key>
-            <string>(Normal|Magic|Rare|Unique)</string>
+            <string>(Normal|Magic|Rare|Unique|True|False)</string>
             <key>name</key>
             <string>string.quoted.single.poelf</string>
         </dict>
@@ -55,6 +55,14 @@
             <string>Numerics</string>
             <key>match</key>
             <string>(\d+)</string>
+            <key>name</key>
+            <string>constant.numeric.source</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Minimap and Effect modifiers</string>
+            <key>match</key>
+            <string>(Red|Green|Blue|Brown|White|Yellow|Circle|Diamond|Hexagon|Square|Star|Triangle|Temp)</string>
             <key>name</key>
             <string>constant.numeric.source</string>
         </dict>
